@@ -1,0 +1,212 @@
+/******************************* CSS reset ***********************************************************/
+ body, div, dl, dt, dd, ol, ul, li,h1, h2, h3, h4, h5, h6,pre,form,img, p,tr, th, td {
+	margin: 0;
+	padding: 0;
+}
+ol, ul {list-style: none;}
+img { border: 0 none; display: block;}
+table {border-collapse:collapse; border-spacing:0;}
+h1, h2, h3, h4, h5, h6 {font-size:100%; font-weight: normal;}
+html {color: #333;font: 12px/1.5 Arial,Helvetica,sans-serif; background-color:white;}
+input[type="text"],
+input[type="password"]{
+	border: 1px solid #ccc;
+	vertical-align: middle;
+	-moz-border-radius: 2px 2px 2px 2px;
+    padding:3px;	
+	background-color: #fff;
+}
+input[type="radio"],input[type="checkbox"],input[type="button"]{border:none;vertical-align: middle;}
+input[type="button"] {cursor: pointer;}
+select {
+	vertical-align: middle;
+	color: #666;
+	border: 1px solid #ccc;
+    padding:2px;
+	background-color: #fff;	
+	width:100px;
+}
+textarea {
+	border: 1px solid #ccc;
+	background-color: #fff;
+	padding: 6px;
+	font-size:12px;
+}
+label {
+	font-family: Tahoma;
+	vertical-align: middle;
+}
+/*  form 表单输入状态时的 border变色 */
+input:focus,select:focus,textarea:focus{border-color:#00a9ec}  
+
+/*  所有 文字颜色 大小 粗细 全局通用的   */
+/*  彩色字体  */
+.c_red{color:#990000}  /*  红色  */
+.c_green{color:#79a200} /*  绿色  */
+.c_orange{color:#FE8C1A} /*  橙色  */
+.c_blue{color:#3679BE} /*  蓝色  */
+.c_white{color:#fff}/*  白色  */
+
+/*  黑白字体  */
+.color333{color:#333;} /*  深灰色  */
+.color666{color:#666;} /*  中等深灰色  */
+.color999{color:#999;} /*  50%灰色  */
+.colorccc{color:#ccc;} /*  #ccc灰色  */
+.coloreee{color:#eee;} /*  #eee灰色  */
+
+.fb{font-weight:bold;} /*  粗体  */
+.fn{font-weight:normal;} /*  正常粗细  */
+
+.f_s10 {font-size:10px;} 
+.f_s11 {font-size:11px;} 
+.f_s12 {font-size:12px;} 
+.f_s14 {font-size:14px;} 
+.f_s16 {font-size:16px;}
+.f_s18 {font-size:18px;}
+.f_s20 {font-size:20px;}
+
+.lh160{line-height:160%;}
+.lh180{line-height:180%;}
+.lh200{line-height:200%;}
+
+/*  英文字体强制换行......  */
+.w_break {
+	word-wrap: break-word;
+	overflow: hidden;
+}
+body, table, td, div, p, a  {
+    word-wrap: break-word;
+}
+
+.unl {text-decoration: underline;} /*  链接下划线  */
+.no_unl{text-decoration: none;} /*  链接无下划线  */
+.crp{cursor:pointer}  /*  链接手型  */
+.text_delete {text-decoration: line-through;} /*  删除线  */
+a {blr:expression(this.onFocus=this.blur());outline:none;}  /*  去除连接虚线  */
+
+/*  全局 margin 属性  |  */
+.m0{margin:0}
+.m5{margin:5px;}
+.m10{margin:10px;}
+.m20{margin:20px;}
+
+.ml5  {margin-left:5px;}
+.ml10{margin-left:10px;}
+.ml15{margin-left:15px;}
+.ml20{margin-left:20px;}
+.ml30{margin-left:30px;}
+
+.mr0  {margin-right:0px;}
+.mr5  {margin-right:5px;}
+.mr10{margin-right:10px;}
+.mr15{margin-right:15px;}
+.mr20{margin-right:20px;}
+.mr30{margin-right:30px;}
+
+.mt0  {margin-top:0;}
+.mt5  {margin-top:5px;}
+.mt10{margin-top:10px;}
+.mt15{margin-top:15px;}
+.mt20{margin-top:20px;}
+.mt30{margin-top:30px;}
+.mt100{margin-top:30px;}
+
+.mb0  {margin-bottom:0px;}
+.mb5  {margin-bottom:5px;}
+.mb10{margin-bottom:10px;}
+.mb15{margin-bottom:15px;}
+.mb20{margin-bottom:20px!important;}
+.mb25{margin-bottom:25px;}
+.mb30{margin-bottom:30px;}
+
+/*  全局 padding  属性  |  */
+.p0{padding:0}
+.p5{padding:5px;}
+.p10{padding:10px;}
+.p20{padding:20px;}
+
+.pl5 {padding-left:5px;}
+.pl10{padding-left:10px;}
+.pl15{padding-left:15px;}
+.pl20{padding-left:20px;}
+.pl30{padding-left:30px;}
+
+.pt5 {padding-top:5px;}
+.pt10{padding-top:10px;}
+.pt15{padding-top:15px;}
+.pt20{padding-top:20px;}
+.pt30{padding-top:30px;}
+
+.pb0 {padding-bottom:0px;}
+.pb5 {padding-bottom:5px;}
+.pb10{padding-bottom:10px;}
+.pb15{padding-bottom:15px;}
+.pb20{padding-bottom:20px;}
+.pb30{padding-bottom:30px;}
+
+.pr0 {padding-right:0;}
+.pr5 {padding-right:5px;}
+.pr10{padding-right:10px;}
+.pr15{padding-right:15px;}
+.pr20{padding-right:20px;}
+.pr30{padding-right:30px;}
+
+/*  全局 对齐  属性  |  */
+.ta_c{text-align: center;}
+.ta_l{text-align: left;}
+.ta_r{text-align: right;}
+
+/*  全局 定位  属性  |  */
+.ov_h{overflow: hidden;zoom:1; display: block;}
+.ov_s{overflow: scroll;}
+.db{display:block}
+.dn {display: none;}
+.di {display: inline;}
+.dib{display:inline-block;-moz-inline-stack:inline-block;}
+
+.cb{clear: both}
+.cr{clear: right}
+.cl{clear: left;}
+
+.pr{position: relative;}
+.pa{position: absolute;}
+
+.rr{float:right}
+.ll{float:left}
+
+/*  清除浮动，不占高度，  */
+* html .clearfix {
+zoom: 1;
+}
+*+html .clearfix {
+zoom: 1;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+/*  全局 链接属性  */
+a {
+	color: #555;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #555;
+}
+
+
+/*  多于文字 显示为......  */
+.ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	-moz-binding: url('ellipsis.xml#ellipsis');
+	display: block;
+}
